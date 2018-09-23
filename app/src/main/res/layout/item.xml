@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#99b4da"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_weight="3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/idTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Course code"
+                                    android:textColor="#000"
+                                    android:textSize="20sp" />
+
+                                <TextView
+
+                                    android:id="@+id/sessionTv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="15dp"
+                                    android:text="Course Title"
+                                    android:textColor="#000"
+                                    android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                           >
+                                <TextView
+                                    android:id="@+id/credit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Credits"
+                                    android:background="#edf0f7"
+                                    android:layout_margin="10dp"
+                                    android:textSize="15sp"
+                                    android:textColor="#000"/>
+
+                                <TextView
+                                    android:id="@+id/sem"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Semester"
+                                    android:background="#ebf3f5"
+                                    android:layout_margin="10dp"
+                                    android:textColor="#000"/>
+                        </LinearLayout>
+                </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
